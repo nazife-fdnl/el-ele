@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4caf72"/>
+      <stop offset="50%" stop-color="#a0c070"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- White background circle -->
+  <circle cx="100" cy="100" r="96" fill="white"/>
+
+  <!-- Gradient border -->
+  <circle cx="100" cy="100" r="96" fill="none" stroke="url(#borderGrad)" stroke-width="3.5"/>
+
+  <!-- GREEN seismic wave (left side) -->
+  <polyline
+    points="14,74 22,74 26,60 30,88 34,56 38,90 42,68 46,74 58,74"
+    fill="none" stroke="#4caf72" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- GREEN hand silhouette (upper-left, reaching right/down) -->
+  <path d="
+    M58,62
+    C60,58 65,56 70,57
+    C74,55 80,54 85,56
+    C90,54 95,54 98,57
+    C102,55 107,56 108,60
+    C112,59 115,62 113,66
+    L110,70
+    C112,70 113,73 111,76
+    L106,80
+    C106,83 103,85 100,85
+    L88,87
+    C80,88 72,86 67,82
+    L60,76
+    C55,72 54,66 58,62 Z
+  " fill="#5ab570" opacity="0.92"/>
+
+  <!-- GREEN hand fingers detail -->
+  <path d="M85,56 C86,50 90,48 93,51 L93,57" fill="#5ab570" opacity="0.7"/>
+  <path d="M95,55 C96,49 100,48 102,51 L102,57" fill="#5ab570" opacity="0.7"/>
+  <path d="M105,57 C107,52 111,52 112,56 L111,62" fill="#5ab570" opacity="0.7"/>
+
+  <!-- RED hand silhouette (lower-right, reaching left/up) -->
+  <path d="
+    M142,138
+    C140,142 135,144 130,143
+    C126,145 120,146 115,144
+    C110,146 105,146 102,143
+    C98,145 93,144 92,140
+    C88,141 85,138 87,134
+    L90,130
+    C88,130 87,127 89,124
+    L94,120
+    C94,117 97,115 100,115
+    L112,113
+    C120,112 128,114 133,118
+    L140,124
+    C145,128 146,134 142,138 Z
+  " fill="#c0392b" opacity="0.92"/>
+
+  <!-- RED hand fingers detail -->
+  <path d="M115,144 C114,150 110,152 107,149 L107,143" fill="#c0392b" opacity="0.7"/>
+  <path d="M105,145 C104,151 100,152 98,149 L98,143" fill="#c0392b" opacity="0.7"/>
+  <path d="M95,143 C93,148 89,148 88,144 L89,138" fill="#c0392b" opacity="0.7"/>
+
+  <!-- RED seismic wave (right side) -->
+  <polyline
+    points="142,126 154,126 158,112 162,140 166,108 170,142 174,120 178,126 186,126"
+    fill="none" stroke="#c0392b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

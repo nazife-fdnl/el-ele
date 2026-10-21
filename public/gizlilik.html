@@ -16,26 +16,45 @@
 <h1>El Ele - Gizlilik Politikası</h1>
 <p class="tarih">Son güncelleme: 21 Ekim 2026</p>
 
-<p>Bu politika, El Ele mobil uygulamasının hangi bilgileri topladığını, bu bilgileri neden kullandığını ve nasıl koruduğunu açıklar.</p>
+<p>Bu politika, El Ele mobil uygulamasının hangi bilgileri topladığını, bu bilgileri neden kullandığını, kimlerle paylaştığını ve nasıl sakladığını açıklar.</p>
 
 <h2>Topladığımız bilgiler</h2>
-<p><strong>Konum:</strong> Yardım talebi oluşturduğunda ve yakındaki talepleri ya da yardımcıları haritada gösterebilmek için konumuna erişiriz. Konum izni vermezsen uygulamanın bu özellikleri çalışmaz, diğer özellikler kullanılabilir.</p>
-<p><strong>Yardım talebi bilgileri:</strong> Oluşturduğun talepte seçtiğin ihtiyaç türü, açıklama metni, konum ve iletişim bilgilerin Supabase veritabanında saklanır. Bu bilgiler talebin yardımcılar tarafından görülebilmesi için kullanılır.</p>
-<p><strong>Rehber:</strong> Acil durumda haber vermek istediğin kişileri seçebilmen için rehberine erişiriz. Rehber bilgileri cihazında saklanır ve yalnızca sen seçtiğinde SMS göndermek için kullanılır.</p>
-<p><strong>Mikrofon ve konuşma tanıma:</strong> Konuşarak yardım talebi oluşturabilmen için mikrofonunu kullanırız. Ses, cihazın konuşma tanıma hizmeti üzerinden yazıya çevrilir.</p>
+
+<p><strong>Konum:</strong> Yardım talebi oluşturduğunda ve yakındaki talepleri ya da yardımcıları haritada gösterebilmek için cihazının GPS konumuna erişiriz. Konum izni vermezsen, kaba bir konum tahmini için IP adresinden yaklaşık konum alınır. Bu durumda IP adresin ipapi.co servisine gönderilir. İzin vermezsen de uygulamanın diğer özellikleri kullanılabilir.</p>
+
+<p><strong>Yardım talebi bilgileri:</strong> Talebinde seçtiğin ihtiyaç türü, serbest metin notun, konumun ve varsa adın, talebin durumu (aktif, eşleşti ya da çözüldü) Supabase veritabanında saklanır. Bu bilgiler talebin yardımcılar tarafından görülebilmesi için kullanılır.</p>
+
+<p><strong>Telefon numarası:</strong> Talebe iletişim numaranı eklemen isteğe bağlıdır. Numara, talepler listesinde herkese gösterilmez. Ayrı bir kayıt olarak tutulur ve yalnızca biri "Ara" seçeneğine bastığında açığa çıkar.</p>
+
+<p><strong>Sağlık bilgisi:</strong> Kan ihtiyacı seçtiğinde kan grubunu ve varsa alerji bilgisini talebe eklemeni isteyebiliriz. Bu bilgiler isteğe bağlıdır ve yalnızca kan ihtiyacı olan talebe eklenir. Yardımcıların doğru kan grubunu getirebilmesi için kullanılır.</p>
+
+<p><strong>Gönüllü kayıtları:</strong> Başka bir ile yardım için gitmek istediğinde gidilecek yer, ihtiyaç türü, kişi sayısı, ulaşım ihtiyacı, notun ve isteğe bağlı olarak telefon numaran kaydedilir. Telefon numarası, talebe eklenen numara gibi yalnızca "Ara" seçeneğiyle açığa çıkar.</p>
+
+<p><strong>Sohbet mesajları:</strong> Gönüllüler için yazılan sohbet mesajları (en fazla 500 karakter) ve gösterilen isim (varsayılan olarak "Gönüllü") herkese açık sohbet alanında saklanır ve görünür.</p>
+
+<p><strong>Rehber:</strong> Acil durumda haber vermek istediğin kişileri seçebilmen için rehberine erişiriz. Rehber bilgileri yalnızca cihazında saklanır ve sen seçtiğinde SMS göndermek için kullanılır. Rehber bilgileri sunucumuza gönderilmez.</p>
+
+<p><strong>Mikrofon ve konuşma tanıma:</strong> Konuşarak yardım talebi oluşturabilmen için mikrofonunu kullanırız. Ses, cihazın konuşma tanıma hizmeti üzerinden yazıya çevrilir. Ses kaydı sunucumuza gönderilmez.</p>
+
 <p><strong>Kamera:</strong> Karanlıkta fark edilebilmen için yalnızca telefonunun flaşını açmak amacıyla kameraya erişiriz. Fotoğraf çekilmez ve kaydedilmez.</p>
 
-<h2>Yapay zekâ kullanımı</h2>
-<p>Yardım talebinin aciliyetini değerlendirmek için talep metni, bu değerlendirmeyi yapan bir yapay zekâ servisine (Anthropic) gönderilebilir. Bu bilgi yalnızca aciliyet değerlendirmesi için kullanılır.</p>
-
 <h2>Bilgilerini nasıl kullanıyoruz</h2>
-<p>Topladığımız bilgileri yalnızca uygulamanın çalışması için kullanırız: yardım taleplerini oluşturmak, haritada göstermek, aciliyeti değerlendirmek ve sen istediğinde acil durum mesajı göndermek.</p>
+<p>Topladığımız bilgileri yalnızca uygulamanın çalışması için kullanırız: yardım taleplerini ve gönüllü kayıtlarını oluşturmak, haritada göstermek, aciliyeti değerlendirmek, gönüllü sohbetini sürdürmek ve sen istediğinde acil durum mesajı göndermek. Bilgilerini reklam ya da izleme amacıyla kullanmayız ve satmayız.</p>
 
-<h2>Üçüncü taraflar</h2>
-<p>Veritabanı altyapısı için Supabase, aciliyet değerlendirmesi için Anthropic ve harita için Google Haritalar hizmetleri kullanılır. Bu hizmetler kendi gizlilik politikalarına tabidir.</p>
+<h2>Yapay zekâ kullanımı</h2>
+<p>Yardım talebinin aciliyetini değerlendirmek için talebinin metni, bu değerlendirmeyi yapan bir yapay zekâ servisine (Anthropic) gönderilebilir. Bu bilgi yalnızca aciliyet değerlendirmesi için kullanılır.</p>
 
-<h2>Verilerin silinmesi</h2>
-<p>Yardım talebinin veya diğer bilgilerinin silinmesini istersen <a href="mailto:nazifefidanol34@gmail.com">nazifefidanol34@gmail.com</a> adresinden bize ulaşabilirsin.</p>
+<h2>Üçüncü taraf hizmetler</h2>
+<p>Uygulama şu hizmetleri kullanır: veritabanı için Supabase, aciliyet değerlendirmesi için Anthropic, harita için Google Haritalar ve IP tabanlı kaba konum için ipapi.co. Bu hizmetler kendi gizlilik politikalarına tabidir.</p>
+
+<h2>Verilerin saklanması ve silinmesi</h2>
+<p>Yardım talepleri ve gönüllü kayıtları, durumları kapatılsa bile veritabanında tutulabilir. Herhangi bir talebin, telefon numaranın ya da diğer bilgilerinin silinmesini istersen <a href="mailto:nazifefidanol34@gmail.com">nazifefidanol34@gmail.com</a> adresinden bize ulaşabilirsin. Talebini tanımlayabilmemiz için talep içeriğini ve yaklaşık oluşturulma zamanını belirtmen yeterli olur.</p>
+
+<h2>Çocuklar</h2>
+<p>Uygulama bilerek 13 yaş altındaki çocuklardan bilgi toplamaz. Bir çocuğun bilgilerinin bize ulaştığını fark edersek bunları sileriz.</p>
+
+<h2>Politikadaki değişiklikler</h2>
+<p>Bu politika değiştiğinde bu sayfadaki tarihi güncelleyeceğiz.</p>
 
 <h2>İletişim</h2>
 <p>Bu politika hakkında sorularınız için: <a href="mailto:nazifefidanol34@gmail.com">nazifefidanol34@gmail.com</a></p>

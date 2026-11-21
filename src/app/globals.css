@@ -1,69 +1,77 @@
 @import "tailwindcss";
 
+/* El Ele tasarım dili: sade, açık renkli, az yuvarlatılmış köşeler.
+   Kırmızı sadece acil durumla ilgili yerlerde. Afet modu koyu temada. */
+@theme {
+  --color-paper: #F3F4F6;
+  --color-card: #FFFFFF;
+  --color-soft: #E5E7EB;
+  --color-line: #D1D5DB;
+  --color-ink: #111827;
+  --color-muted: #4B5563;
+  --color-brand: #D32F2F;
+  --color-brand-soft: #FDECEC;
+  --color-ok: #15803D;
+  --color-ok-soft: #E7F5EC;
+  --color-info: #1D4ED8;
+  --color-info-soft: #E8EEFC;
+  --color-night: #0F0F0F;
+  --color-night-2: #18181B;
+  --color-night-line: #3F3F46;
+  --radius-box: 6px;
+}
+
 * {
   box-sizing: border-box;
 }
 
+html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #0f0f0f;
-  color: #fff;
-  min-height: 100vh;
   margin: 0;
+  min-height: 100%;
 }
 
-.need-card {
-  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
   -webkit-tap-highlight-color: transparent;
-  user-select: none;
 }
 
-.need-card:active {
-  transform: scale(0.92);
-}
-
-.need-card.selected {
-  background: rgba(239, 68, 68, 0.25) !important;
-  border-color: #ef4444 !important;
-}
-
-.offer-card.selected {
-  background: rgba(34, 197, 94, 0.25) !important;
-  border-color: #22c55e !important;
-}
-
-.pulse-ring {
-  animation: pulse-ring 1.8s ease-out infinite;
-}
-
-@keyframes pulse-ring {
-  0% { transform: scale(0.8); opacity: 1; }
-  100% { transform: scale(2.8); opacity: 0; }
+button {
+  font: inherit;
 }
 
 .leaflet-container {
-  background: #1a1a2e !important;
-  font-family: -apple-system, system-ui, sans-serif !important;
+  font-family: inherit !important;
 }
 
-/* Popup gövdesi sıfırla */
-.elele-popup .leaflet-popup-content-wrapper {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
+/* Oyun: deprem sarsıntısı */
+@keyframes quake {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-9px, 3px); }
+  40% { transform: translate(8px, -2px); }
+  60% { transform: translate(-7px, 2px); }
+  80% { transform: translate(9px, 3px); }
+  100% { transform: translate(0, 0); }
+}
+.quake {
+  animation: quake 0.18s linear infinite;
 }
 
-.elele-popup .leaflet-popup-content {
-  margin: 0 !important;
+@keyframes wobble {
+  0%, 100% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2.5deg); }
+}
+.wobble {
+  animation: wobble 0.18s linear infinite;
 }
 
-.elele-popup .leaflet-popup-tip-container {
-  display: none !important;
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+  100% { transform: scale(1); }
 }
-
-/* Marker ripple animasyonu */
-@keyframes ripple {
-  0%   { transform: scale(1);   opacity: 0.6; }
-  100% { transform: scale(2.2); opacity: 0; }
+.pop {
+  animation: pop 0.25s ease-out;
 }
